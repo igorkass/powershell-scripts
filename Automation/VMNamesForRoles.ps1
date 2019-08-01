@@ -4,7 +4,7 @@
             @("CloudServiceEsb", "EsbVM")
 )
 
-$ServiceConfigFiles = Get-ChildItem -Path "C:\Repos\repo" -Recurse | ? {$_.PSParentPath -match "CloudService" -and $_.PSParentPath -notmatch "(Monex.AzureCloudService|Release)" -and $_.Name -match "ServiceConfiguration" -and $_.Name -notmatch "(Local|Production)"}
+$ServiceConfigFiles = Get-ChildItem -Path "C:\Repos\repo" -Recurse | ? {$_.PSParentPath -match "CloudService" -and $_.PSParentPath -notmatch "(Example.AzureCloudService|Release)" -and $_.Name -match "ServiceConfiguration" -and $_.Name -notmatch "(Local|Production)"}
 
 foreach ($ServiceConfigFile in $ServiceConfigFiles) {
 
