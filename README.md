@@ -1,1 +1,1 @@
-# scripts
+Various useful PowerShell scripts.
